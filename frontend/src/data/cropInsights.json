@@ -1,0 +1,232 @@
+{
+  "Rice": {
+    "type": "Cereal",
+    "climate": "Warm and humid climate",
+    "duration": "Medium to long duration",
+    "description": "Rice is widely cultivated in regions with sufficient rainfall and warm temperatures."
+  },
+
+  "Maize": {
+    "type": "Cereal",
+    "climate": "Warm climate with moderate rainfall",
+    "duration": "Medium duration",
+    "description": "Maize is a versatile crop grown across different regions and seasons."
+  },
+
+  "Cotton": {
+    "type": "Cash Crop",
+    "climate": "Warm climate with moderate rainfall",
+    "duration": "Long duration",
+    "description": "Cotton is commonly grown during the monsoon season and thrives in warm regions."
+  },
+
+  "Groundnut": {
+    "type": "Oilseed",
+    "climate": "Warm and dry climate",
+    "duration": "Medium duration",
+    "description": "Groundnut grows well in light soils and is commonly cultivated in western and southern India."
+  },
+
+  "Millets": {
+    "type": "Cereal",
+    "climate": "Dry and semi-arid climate",
+    "duration": "Short to medium duration",
+    "description": "Millets are hardy crops suitable for low rainfall regions."
+  },
+
+  "Sunflower": {
+    "type": "Oilseed",
+    "climate": "Warm climate",
+    "duration": "Medium duration",
+    "description": "Sunflower adapts well to a variety of soils and is grown for edible oil."
+  },
+
+  "Chickpea": {
+    "type": "Pulse",
+    "climate": "Cool and dry climate",
+    "duration": "Medium duration",
+    "description": "Chickpea is a winter pulse crop grown widely in northern and central India."
+  },
+
+  "Black Gram": {
+    "type": "Pulse",
+    "climate": "Warm climate",
+    "duration": "Short duration",
+    "description": "Black gram is a fast-growing pulse crop suited to warm conditions."
+  },
+
+  "Wheat": {
+    "type": "Cereal",
+    "climate": "Cool climate",
+    "duration": "Medium duration",
+    "description": "Wheat is a major winter crop grown in cooler conditions."
+  },
+
+  "Mustard": {
+    "type": "Oilseed",
+    "climate": "Cool climate",
+    "duration": "Short to medium duration",
+    "description": "Mustard is widely grown as an oilseed crop during the winter season."
+  },
+
+  "Vegetables": {
+    "type": "Mixed Crops",
+    "climate": "Varies by crop",
+    "duration": "Short duration",
+    "description": "Vegetable cultivation includes multiple short-duration crops grown across seasons."
+  },
+
+  "Jute": {
+    "type": "Fiber",
+    "climate": "Warm and humid climate",
+    "duration": "Long duration",
+    "description": "Jute is a fiber crop grown mainly in eastern India under humid conditions."
+  },
+
+  "Pulses": {
+    "type": "Legume Group",
+    "climate": "Moderate climate",
+    "duration": "Medium duration",
+    "description": "Pulses include lentils and beans that improve soil fertility."
+  },
+
+  "Peas": {
+    "type": "Pulse",
+    "climate": "Cool climate",
+    "duration": "Short duration",
+    "description": "Peas are cool-season crops grown mainly in winter."
+  },
+
+  "Pumpkin": {
+    "type": "Vegetable",
+    "climate": "Warm climate",
+    "duration": "Medium duration",
+    "description": "Pumpkin is suitable for warm seasons and grows well in diverse soils."
+  },
+
+  "Cucumber": {
+    "type": "Vegetable",
+    "climate": "Warm and humid climate",
+    "duration": "Short duration",
+    "description": "Cucumber is a fast-growing summer vegetable requiring warm temperatures."
+  },
+
+  "Muskmelon": {
+    "type": "Fruit",
+    "climate": "Hot and dry climate",
+    "duration": "Short duration",
+    "description": "Muskmelon is a summer fruit crop grown in warm regions."
+  },
+
+  "Bajra": {
+    "type": "Cereal",
+    "climate": "Hot and dry climate",
+    "duration": "Short duration",
+    "description": "Bajra is a drought-resistant crop suitable for arid regions."
+  },
+
+  "Barley": {
+    "type": "Cereal",
+    "climate": "Cool and dry climate",
+    "duration": "Medium duration",
+    "description": "Barley is grown in cooler regions and requires less water than wheat."
+  },
+
+  "Paddy": {
+    "type": "Cereal",
+    "climate": "Warm and humid climate",
+    "duration": "Medium duration",
+    "description": "Paddy refers to rice grown in flooded field conditions."
+  },
+
+  "Soybean": {
+    "type": "Oilseed",
+    "climate": "Warm climate with moderate rainfall",
+    "duration": "Medium duration",
+    "description": "Soybean is widely grown for oil and protein content."
+  },
+
+  "Gram": {
+    "type": "Pulse",
+    "climate": "Cool and dry climate",
+    "duration": "Medium duration",
+    "description": "Gram is a commonly grown winter pulse crop."
+  },
+
+  "Jowar": {
+    "type": "Cereal",
+    "climate": "Dry and semi-arid climate",
+    "duration": "Medium duration",
+    "description": "Jowar is a drought-tolerant cereal crop."
+  },
+
+  "Tomato": {
+    "type": "Vegetable",
+    "climate": "Moderate climate",
+    "duration": "Short duration",
+    "description": "Tomato is widely cultivated as a vegetable crop across seasons."
+  },
+
+  "Ragi": {
+    "type": "Cereal",
+    "climate": "Dry climate",
+    "duration": "Medium duration",
+    "description": "Ragi is a nutritious millet grown in dry regions."
+  },
+
+  "Coconut": {
+    "type": "Plantation Crop",
+    "climate": "Warm and humid climate",
+    "duration": "Long duration",
+    "description": "Coconut is a perennial crop grown in coastal and tropical regions."
+  },
+
+  "Pepper": {
+    "type": "Spice",
+    "climate": "Warm and humid climate",
+    "duration": "Long duration",
+    "description": "Pepper is a spice crop grown in tropical regions."
+  },
+
+  "Banana": {
+    "type": "Fruit",
+    "climate": "Warm and humid climate",
+    "duration": "Medium duration",
+    "description": "Banana is a widely grown fruit crop in tropical climates."
+  },
+
+  "Sugarcane": {
+    "type": "Cash Crop",
+    "climate": "Warm climate with sufficient water",
+    "duration": "Long duration",
+    "description": "Sugarcane is a major cash crop grown in irrigated regions."
+  },
+
+  "Potato": {
+    "type": "Vegetable",
+    "climate": "Cool climate",
+    "duration": "Short duration",
+    "description": "Potato is a cool-season vegetable crop."
+  },
+
+  "Brinjal": {
+    "type": "Vegetable",
+    "climate": "Warm climate",
+    "duration": "Medium duration",
+    "description": "Brinjal is a common vegetable grown in warm conditions."
+  },
+
+  "Watermelon": {
+    "type": "Fruit",
+    "climate": "Hot and dry climate",
+    "duration": "Short duration",
+    "description": "Watermelon is a summer fruit crop grown in warm regions."
+  },
+  "Lentil": {
+  "type": "Pulse",
+  "climate": "Cool and dry climate",
+  "duration": "Medium duration",
+  "description": "Lentil is a winter pulse crop commonly grown in northern and eastern India, valued for its protein content."
+}
+
+}

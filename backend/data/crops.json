@@ -1,0 +1,860 @@
+[
+  {
+    "name": "Rice",
+    "type": "grain",
+    "season": "kharif",
+    "description": "A staple cereal crop grown in warm, humid conditions and flooded fields.",
+    "imageUrl": "https://placehold.co/600x400?text=Rice"
+  },
+  {
+    "name": "Wheat",
+    "type": "grain",
+    "season": "rabi",
+    "description": "A major cereal crop grown in cool weather, used for flour and food products.",
+    "imageUrl": "https://placehold.co/600x400?text=Wheat"
+  },
+  {
+    "name": "Maize (Corn)",
+    "type": "grain",
+    "season": "kharif",
+    "description": "A versatile cereal crop used for food, feed, and industrial products.",
+    "imageUrl": "https://placehold.co/600x400?text=Maize"
+  },
+  {
+    "name": "Barley",
+    "type": "grain",
+    "season": "rabi",
+    "description": "A hardy cereal crop grown in cool climates, used for food and malt.",
+    "imageUrl": "https://placehold.co/600x400?text=Barley"
+  },
+  {
+    "name": "Sorghum (Jowar)",
+    "type": "grain",
+    "season": "kharif",
+    "description": "A drought-tolerant millet crop grown in semi-arid regions.",
+    "imageUrl": "https://placehold.co/600x400?text=Sorghum"
+  },
+  {
+    "name": "Pearl Millet (Bajra)",
+    "type": "grain",
+    "season": "kharif",
+    "description": "A drought-resistant millet grown in hot and dry conditions.",
+    "imageUrl": "https://placehold.co/600x400?text=Bajra"
+  },
+  {
+    "name": "Finger Millet (Ragi)",
+    "type": "grain",
+    "season": "kharif",
+    "description": "A nutritious millet crop rich in calcium and grown in rainfed areas.",
+    "imageUrl": "https://placehold.co/600x400?text=Ragi"
+  },
+  {
+    "name": "Oats",
+    "type": "grain",
+    "season": "rabi",
+    "description": "A cool-season cereal used for food and fodder, popular for healthy diets.",
+    "imageUrl": "https://placehold.co/600x400?text=Oats"
+  },
+  {
+    "name": "Rye",
+    "type": "grain",
+    "season": "rabi",
+    "description": "A cold-tolerant cereal crop grown in cooler climates and poor soils.",
+    "imageUrl": "https://placehold.co/600x400?text=Rye"
+  },
+  {
+    "name": "Foxtail Millet",
+    "type": "grain",
+    "season": "kharif",
+    "description": "A short-duration millet crop suitable for dryland farming.",
+    "imageUrl": "https://placehold.co/600x400?text=Foxtail+Millet"
+  },
+
+  {
+    "name": "Chickpea (Gram)",
+    "type": "pulse",
+    "season": "rabi",
+    "description": "A protein-rich pulse crop grown in cool, dry seasons.",
+    "imageUrl": "https://placehold.co/600x400?text=Chickpea"
+  },
+  {
+    "name": "Pigeon Pea (Arhar/Tur)",
+    "type": "pulse",
+    "season": "kharif",
+    "description": "A major pulse crop grown in warm climates, improves soil fertility.",
+    "imageUrl": "https://placehold.co/600x400?text=Pigeon+Pea"
+  },
+  {
+    "name": "Green Gram (Moong)",
+    "type": "pulse",
+    "season": "zaid",
+    "description": "A short-duration pulse crop grown in summer and rainy seasons.",
+    "imageUrl": "https://placehold.co/600x400?text=Moong"
+  },
+  {
+    "name": "Black Gram (Urad)",
+    "type": "pulse",
+    "season": "kharif",
+    "description": "A pulse crop grown in warm seasons, used widely in Indian cuisine.",
+    "imageUrl": "https://placehold.co/600x400?text=Urad"
+  },
+  {
+    "name": "Lentil (Masoor)",
+    "type": "pulse",
+    "season": "rabi",
+    "description": "A cool-season pulse crop valued for protein and quick cooking.",
+    "imageUrl": "https://placehold.co/600x400?text=Lentil"
+  },
+  {
+    "name": "Field Pea",
+    "type": "pulse",
+    "season": "rabi",
+    "description": "A winter pulse crop used for food and fodder, grows well in cool climates.",
+    "imageUrl": "https://placehold.co/600x400?text=Field+Pea"
+  },
+  {
+    "name": "Cowpea (Lobia)",
+    "type": "pulse",
+    "season": "kharif",
+    "description": "A hardy pulse crop tolerant to heat and drought, used as vegetable and pulse.",
+    "imageUrl": "https://placehold.co/600x400?text=Cowpea"
+  },
+  {
+    "name": "Kidney Bean (Rajma)",
+    "type": "pulse",
+    "season": "kharif",
+    "description": "A pulse crop grown in moderate climates, known for large red beans.",
+    "imageUrl": "https://placehold.co/600x400?text=Rajma"
+  },
+  {
+    "name": "Soybean",
+    "type": "pulse",
+    "season": "kharif",
+    "description": "A protein and oil rich crop used for food, feed, and processing.",
+    "imageUrl": "https://placehold.co/600x400?text=Soybean"
+  },
+  {
+    "name": "Horse Gram",
+    "type": "pulse",
+    "season": "rabi",
+    "description": "A drought-tolerant pulse crop grown in dry regions and poor soils.",
+    "imageUrl": "https://placehold.co/600x400?text=Horse+Gram"
+  },
+
+  {
+    "name": "Mustard",
+    "type": "oilseed",
+    "season": "rabi",
+    "description": "An oilseed crop grown in cool seasons, used for edible oil and spices.",
+    "imageUrl": "https://placehold.co/600x400?text=Mustard"
+  },
+  {
+    "name": "Groundnut (Peanut)",
+    "type": "oilseed",
+    "season": "kharif",
+    "description": "An oilseed crop grown in warm climates, used for oil and snacks.",
+    "imageUrl": "https://placehold.co/600x400?text=Groundnut"
+  },
+  {
+    "name": "Sunflower",
+    "type": "oilseed",
+    "season": "all-season",
+    "description": "An oilseed crop known for high-quality edible oil and bright flowers.",
+    "imageUrl": "https://placehold.co/600x400?text=Sunflower"
+  },
+  {
+    "name": "Sesame (Til)",
+    "type": "oilseed",
+    "season": "kharif",
+    "description": "A short-duration oilseed crop grown in warm weather and light soils.",
+    "imageUrl": "https://placehold.co/600x400?text=Sesame"
+  },
+  {
+    "name": "Safflower",
+    "type": "oilseed",
+    "season": "rabi",
+    "description": "An oilseed crop tolerant to drought, grown in dry rabi conditions.",
+    "imageUrl": "https://placehold.co/600x400?text=Safflower"
+  },
+  {
+    "name": "Linseed (Flaxseed)",
+    "type": "oilseed",
+    "season": "rabi",
+    "description": "An oilseed crop grown in cool seasons, used for oil and nutrition.",
+    "imageUrl": "https://placehold.co/600x400?text=Linseed"
+  },
+  {
+    "name": "Castor",
+    "type": "oilseed",
+    "season": "kharif",
+    "description": "An industrial oilseed crop used for lubricants and medicinal products.",
+    "imageUrl": "https://placehold.co/600x400?text=Castor"
+  },
+  {
+    "name": "Niger",
+    "type": "oilseed",
+    "season": "kharif",
+    "description": "A minor oilseed crop grown in hilly and tribal regions.",
+    "imageUrl": "https://placehold.co/600x400?text=Niger"
+  },
+  {
+    "name": "Coconut",
+    "type": "plantation",
+    "season": "all-season",
+    "description": "A plantation crop grown in coastal areas, used for oil, water, and copra.",
+    "imageUrl": "https://placehold.co/600x400?text=Coconut"
+  },
+  {
+    "name": "Oil Palm",
+    "type": "plantation",
+    "season": "all-season",
+    "description": "A high-yield oil crop grown in humid tropics for edible and industrial oil.",
+    "imageUrl": "https://placehold.co/600x400?text=Oil+Palm"
+  },
+
+  {
+    "name": "Potato",
+    "type": "vegetable",
+    "season": "rabi",
+    "description": "A tuber crop grown in cool seasons, widely used as a staple vegetable.",
+    "imageUrl": "https://placehold.co/600x400?text=Potato"
+  },
+  {
+    "name": "Tomato",
+    "type": "vegetable",
+    "season": "all-season",
+    "description": "A popular vegetable crop grown widely, used fresh and in cooking.",
+    "imageUrl": "https://placehold.co/600x400?text=Tomato"
+  },
+  {
+    "name": "Onion",
+    "type": "vegetable",
+    "season": "all-season",
+    "description": "A bulb vegetable grown in multiple seasons, important for culinary use.",
+    "imageUrl": "https://placehold.co/600x400?text=Onion"
+  },
+  {
+    "name": "Garlic",
+    "type": "vegetable",
+    "season": "rabi",
+    "description": "A bulb crop grown in cool seasons, valued for flavor and medicinal use.",
+    "imageUrl": "https://placehold.co/600x400?text=Garlic"
+  },
+  {
+    "name": "Brinjal (Eggplant)",
+    "type": "vegetable",
+    "season": "all-season",
+    "description": "A warm-season vegetable crop grown widely with many varieties.",
+    "imageUrl": "https://placehold.co/600x400?text=Brinjal"
+  },
+  {
+    "name": "Okra (Ladyfinger)",
+    "type": "vegetable",
+    "season": "kharif",
+    "description": "A warm-season vegetable crop, easy to grow and widely consumed.",
+    "imageUrl": "https://placehold.co/600x400?text=Okra"
+  },
+  {
+    "name": "Cabbage",
+    "type": "vegetable",
+    "season": "rabi",
+    "description": "A cool-season leafy vegetable crop grown in winter.",
+    "imageUrl": "https://placehold.co/600x400?text=Cabbage"
+  },
+  {
+    "name": "Cauliflower",
+    "type": "vegetable",
+    "season": "rabi",
+    "description": "A cool-season vegetable crop grown for edible curds.",
+    "imageUrl": "https://placehold.co/600x400?text=Cauliflower"
+  },
+  {
+    "name": "Carrot",
+    "type": "vegetable",
+    "season": "rabi",
+    "description": "A root vegetable crop grown in cool climates, rich in beta-carotene.",
+    "imageUrl": "https://placehold.co/600x400?text=Carrot"
+  },
+  {
+    "name": "Radish",
+    "type": "vegetable",
+    "season": "rabi",
+    "description": "A fast-growing root vegetable suitable for cool seasons.",
+    "imageUrl": "https://placehold.co/600x400?text=Radish"
+  },
+
+  {
+    "name": "Spinach",
+    "type": "vegetable",
+    "season": "all-season",
+    "description": "A leafy vegetable grown quickly, rich in iron and vitamins.",
+    "imageUrl": "https://placehold.co/600x400?text=Spinach"
+  },
+  {
+    "name": "Fenugreek (Methi)",
+    "type": "vegetable",
+    "season": "rabi",
+    "description": "A leafy and seed spice crop grown in cool seasons.",
+    "imageUrl": "https://placehold.co/600x400?text=Fenugreek"
+  },
+  {
+    "name": "Coriander (Dhania)",
+    "type": "spice",
+    "season": "rabi",
+    "description": "A herb and spice crop grown in cool seasons for leaves and seeds.",
+    "imageUrl": "https://placehold.co/600x400?text=Coriander"
+  },
+  {
+    "name": "Chilli",
+    "type": "spice",
+    "season": "all-season",
+    "description": "A spice crop grown widely, used fresh and dried for flavor and heat.",
+    "imageUrl": "https://placehold.co/600x400?text=Chilli"
+  },
+  {
+    "name": "Turmeric",
+    "type": "spice",
+    "season": "kharif",
+    "description": "A rhizome spice crop grown in warm humid climates, used for color and health.",
+    "imageUrl": "https://placehold.co/600x400?text=Turmeric"
+  },
+  {
+    "name": "Ginger",
+    "type": "spice",
+    "season": "kharif",
+    "description": "A rhizome crop grown in warm climates, used as spice and medicinally.",
+    "imageUrl": "https://placehold.co/600x400?text=Ginger"
+  },
+  {
+    "name": "Black Pepper",
+    "type": "spice",
+    "season": "all-season",
+    "description": "A climbing spice crop grown in humid tropics, valued for pungent berries.",
+    "imageUrl": "https://placehold.co/600x400?text=Black+Pepper"
+  },
+  {
+    "name": "Cardamom",
+    "type": "spice",
+    "season": "all-season",
+    "description": "A high-value spice crop grown in shaded, humid conditions.",
+    "imageUrl": "https://placehold.co/600x400?text=Cardamom"
+  },
+  {
+    "name": "Clove",
+    "type": "spice",
+    "season": "all-season",
+    "description": "A plantation spice crop grown in humid tropics for aromatic flower buds.",
+    "imageUrl": "https://placehold.co/600x400?text=Clove"
+  },
+  {
+    "name": "Cumin",
+    "type": "spice",
+    "season": "rabi",
+    "description": "A spice seed crop grown in cool dry climates, used in many cuisines.",
+    "imageUrl": "https://placehold.co/600x400?text=Cumin"
+  },
+
+  {
+    "name": "Banana",
+    "type": "fruit",
+    "season": "all-season",
+    "description": "A tropical fruit crop grown year-round, requires warm and humid climate.",
+    "imageUrl": "https://placehold.co/600x400?text=Banana"
+  },
+  {
+    "name": "Mango",
+    "type": "fruit",
+    "season": "all-season",
+    "description": "A major tropical fruit crop known for sweet seasonal fruits.",
+    "imageUrl": "https://placehold.co/600x400?text=Mango"
+  },
+  {
+    "name": "Apple",
+    "type": "fruit",
+    "season": "all-season",
+    "description": "A temperate fruit crop grown in cool climates, needs chilling hours.",
+    "imageUrl": "https://placehold.co/600x400?text=Apple"
+  },
+  {
+    "name": "Orange",
+    "type": "fruit",
+    "season": "all-season",
+    "description": "A citrus fruit crop grown in subtropical climates, rich in vitamin C.",
+    "imageUrl": "https://placehold.co/600x400?text=Orange"
+  },
+  {
+    "name": "Grapes",
+    "type": "fruit",
+    "season": "all-season",
+    "description": "A vine fruit crop grown in warm dry climates, used fresh and for raisins.",
+    "imageUrl": "https://placehold.co/600x400?text=Grapes"
+  },
+  {
+    "name": "Papaya",
+    "type": "fruit",
+    "season": "all-season",
+    "description": "A tropical fruit crop grown year-round, fast-growing and productive.",
+    "imageUrl": "https://placehold.co/600x400?text=Papaya"
+  },
+  {
+    "name": "Pineapple",
+    "type": "fruit",
+    "season": "all-season",
+    "description": "A tropical fruit crop grown in warm humid regions with well-drained soils.",
+    "imageUrl": "https://placehold.co/600x400?text=Pineapple"
+  },
+  {
+    "name": "Guava",
+    "type": "fruit",
+    "season": "all-season",
+    "description": "A hardy fruit crop grown widely, known for high vitamin C content.",
+    "imageUrl": "https://placehold.co/600x400?text=Guava"
+  },
+  {
+    "name": "Pomegranate",
+    "type": "fruit",
+    "season": "all-season",
+    "description": "A drought-tolerant fruit crop grown in dry regions, valued for arils.",
+    "imageUrl": "https://placehold.co/600x400?text=Pomegranate"
+  },
+  {
+    "name": "Watermelon",
+    "type": "fruit",
+    "season": "zaid",
+    "description": "A summer fruit crop grown in warm weather, needs good irrigation.",
+    "imageUrl": "https://placehold.co/600x400?text=Watermelon"
+  },
+
+  {
+    "name": "Muskmelon",
+    "type": "fruit",
+    "season": "zaid",
+    "description": "A summer melon crop grown in warm climates, sweet and aromatic fruits.",
+    "imageUrl": "https://placehold.co/600x400?text=Muskmelon"
+  },
+  {
+    "name": "Lemon",
+    "type": "fruit",
+    "season": "all-season",
+    "description": "A citrus crop grown widely, used for juice and flavoring.",
+    "imageUrl": "https://placehold.co/600x400?text=Lemon"
+  },
+  {
+    "name": "Lime",
+    "type": "fruit",
+    "season": "all-season",
+    "description": "A citrus fruit crop grown in warm climates, used for beverages and pickles.",
+    "imageUrl": "https://placehold.co/600x400?text=Lime"
+  },
+  {
+    "name": "Strawberry",
+    "type": "fruit",
+    "season": "rabi",
+    "description": "A cool-season fruit crop grown in mild climates, requires careful management.",
+    "imageUrl": "https://placehold.co/600x400?text=Strawberry"
+  },
+  {
+    "name": "Peach",
+    "type": "fruit",
+    "season": "all-season",
+    "description": "A temperate fruit crop grown in cooler regions, produces juicy fruits.",
+    "imageUrl": "https://placehold.co/600x400?text=Peach"
+  },
+  {
+    "name": "Plum",
+    "type": "fruit",
+    "season": "all-season",
+    "description": "A temperate fruit crop grown in cool climates, known for sweet-tart fruits.",
+    "imageUrl": "https://placehold.co/600x400?text=Plum"
+  },
+  {
+    "name": "Pear",
+    "type": "fruit",
+    "season": "all-season",
+    "description": "A temperate fruit crop grown in cooler climates, requires good orchard care.",
+    "imageUrl": "https://placehold.co/600x400?text=Pear"
+  },
+  {
+    "name": "Cherry",
+    "type": "fruit",
+    "season": "all-season",
+    "description": "A temperate fruit crop grown in cold regions, valued for sweet fruits.",
+    "imageUrl": "https://placehold.co/600x400?text=Cherry"
+  },
+  {
+    "name": "Litchi",
+    "type": "fruit",
+    "season": "all-season",
+    "description": "A subtropical fruit crop grown in humid regions, known for sweet arils.",
+    "imageUrl": "https://placehold.co/600x400?text=Litchi"
+  },
+  {
+    "name": "Jackfruit",
+    "type": "fruit",
+    "season": "all-season",
+    "description": "A tropical fruit crop producing large fruits, used ripe and raw.",
+    "imageUrl": "https://placehold.co/600x400?text=Jackfruit"
+  },
+
+  {
+    "name": "Cotton",
+    "type": "fiber",
+    "season": "kharif",
+    "description": "A major fiber crop grown in warm climates, used for textile production.",
+    "imageUrl": "https://placehold.co/600x400?text=Cotton"
+  },
+  {
+    "name": "Jute",
+    "type": "fiber",
+    "season": "kharif",
+    "description": "A fiber crop grown in humid regions, used for sacks and packaging.",
+    "imageUrl": "https://placehold.co/600x400?text=Jute"
+  },
+  {
+    "name": "Sugarcane",
+    "type": "plantation",
+    "season": "all-season",
+    "description": "A commercial crop grown in warm climates, used for sugar and jaggery.",
+    "imageUrl": "https://placehold.co/600x400?text=Sugarcane"
+  },
+  {
+    "name": "Tea",
+    "type": "plantation",
+    "season": "all-season",
+    "description": "A plantation crop grown in hilly humid regions, used for tea leaves.",
+    "imageUrl": "https://placehold.co/600x400?text=Tea"
+  },
+  {
+    "name": "Coffee",
+    "type": "plantation",
+    "season": "all-season",
+    "description": "A plantation crop grown in shaded regions, valued for coffee beans.",
+    "imageUrl": "https://placehold.co/600x400?text=Coffee"
+  },
+  {
+    "name": "Rubber",
+    "type": "plantation",
+    "season": "all-season",
+    "description": "A plantation crop grown in humid tropics, source of natural rubber latex.",
+    "imageUrl": "https://placehold.co/600x400?text=Rubber"
+  },
+  {
+    "name": "Tobacco",
+    "type": "commercial",
+    "season": "all-season",
+    "description": "A commercial crop grown for leaves, requires careful curing and processing.",
+    "imageUrl": "https://placehold.co/600x400?text=Tobacco"
+  },
+  {
+    "name": "Cocoa",
+    "type": "plantation",
+    "season": "all-season",
+    "description": "A tropical plantation crop grown in humid areas, used for chocolate production.",
+    "imageUrl": "https://placehold.co/600x400?text=Cocoa"
+  },
+  {
+    "name": "Arecanut",
+    "type": "plantation",
+    "season": "all-season",
+    "description": "A plantation crop grown in humid regions, used as chewing nut.",
+    "imageUrl": "https://placehold.co/600x400?text=Arecanut"
+  },
+  {
+    "name": "Betel Leaf",
+    "type": "commercial",
+    "season": "all-season",
+    "description": "A leafy commercial crop grown in warm humid areas, used for chewing.",
+    "imageUrl": "https://placehold.co/600x400?text=Betel+Leaf"
+  },
+
+  {
+    "name": "Alfalfa",
+    "type": "forage",
+    "season": "all-season",
+    "description": "A high-protein fodder crop used for livestock feed and soil improvement.",
+    "imageUrl": "https://placehold.co/600x400?text=Alfalfa"
+  },
+  {
+    "name": "Berseem",
+    "type": "forage",
+    "season": "rabi",
+    "description": "A popular winter fodder crop grown for green forage in dairy farming.",
+    "imageUrl": "https://placehold.co/600x400?text=Berseem"
+  },
+  {
+    "name": "Napier Grass",
+    "type": "forage",
+    "season": "all-season",
+    "description": "A perennial fodder grass crop with high biomass yield.",
+    "imageUrl": "https://placehold.co/600x400?text=Napier+Grass"
+  },
+  {
+    "name": "Cluster Bean (Guar)",
+    "type": "pulse",
+    "season": "kharif",
+    "description": "A drought-tolerant crop used as vegetable and for guar gum production.",
+    "imageUrl": "https://placehold.co/600x400?text=Guar"
+  },
+  {
+    "name": "Sweet Potato",
+    "type": "vegetable",
+    "season": "kharif",
+    "description": "A root crop grown in warm climates, rich in carbohydrates and vitamins.",
+    "imageUrl": "https://placehold.co/600x400?text=Sweet+Potato"
+  },
+  {
+    "name": "Cassava (Tapioca)",
+    "type": "vegetable",
+    "season": "all-season",
+    "description": "A tuber crop grown in tropics, used for starch and food.",
+    "imageUrl": "https://placehold.co/600x400?text=Cassava"
+  },
+  {
+    "name": "Beetroot",
+    "type": "vegetable",
+    "season": "rabi",
+    "description": "A cool-season root vegetable crop used fresh and for juices.",
+    "imageUrl": "https://placehold.co/600x400?text=Beetroot"
+  },
+  {
+    "name": "Capsicum (Bell Pepper)",
+    "type": "vegetable",
+    "season": "all-season",
+    "description": "A vegetable crop grown in mild climates, valued for colorful fruits.",
+    "imageUrl": "https://placehold.co/600x400?text=Capsicum"
+  },
+  {
+    "name": "Cucumber",
+    "type": "vegetable",
+    "season": "zaid",
+    "description": "A summer vegetable crop grown in warm conditions, used fresh and in salads.",
+    "imageUrl": "https://placehold.co/600x400?text=Cucumber"
+  },
+  {
+    "name": "Pumpkin",
+    "type": "vegetable",
+    "season": "kharif",
+    "description": "A warm-season vine vegetable crop producing large fruits.",
+    "imageUrl": "https://placehold.co/600x400?text=Pumpkin"
+  },
+
+  {
+    "name": "Bottle Gourd",
+    "type": "vegetable",
+    "season": "kharif",
+    "description": "A vine vegetable crop grown in warm climates, commonly used in Indian dishes.",
+    "imageUrl": "https://placehold.co/600x400?text=Bottle+Gourd"
+  },
+  {
+    "name": "Bitter Gourd",
+    "type": "vegetable",
+    "season": "kharif",
+    "description": "A vine vegetable crop known for bitter fruits and health benefits.",
+    "imageUrl": "https://placehold.co/600x400?text=Bitter+Gourd"
+  },
+  {
+    "name": "Ridge Gourd",
+    "type": "vegetable",
+    "season": "kharif",
+    "description": "A warm-season vine vegetable crop grown widely in home gardens and farms.",
+    "imageUrl": "https://placehold.co/600x400?text=Ridge+Gourd"
+  },
+  {
+    "name": "Snake Gourd",
+    "type": "vegetable",
+    "season": "kharif",
+    "description": "A vine crop producing long fruits, grown in warm and humid regions.",
+    "imageUrl": "https://placehold.co/600x400?text=Snake+Gourd"
+  },
+  {
+    "name": "French Bean",
+    "type": "vegetable",
+    "season": "rabi",
+    "description": "A cool-season vegetable legume grown for tender pods.",
+    "imageUrl": "https://placehold.co/600x400?text=French+Bean"
+  },
+  {
+    "name": "Peas (Garden Pea)",
+    "type": "vegetable",
+    "season": "rabi",
+    "description": "A cool-season vegetable crop grown for green pods and seeds.",
+    "imageUrl": "https://placehold.co/600x400?text=Peas"
+  },
+  {
+    "name": "Drumstick (Moringa)",
+    "type": "vegetable",
+    "season": "all-season",
+    "description": "A hardy tree vegetable grown for pods and leaves, rich in nutrients.",
+    "imageUrl": "https://placehold.co/600x400?text=Drumstick"
+  },
+  {
+    "name": "Mushroom",
+    "type": "commercial",
+    "season": "all-season",
+    "description": "A cultivated fungus grown indoors, requires controlled temperature and humidity.",
+    "imageUrl": "https://placehold.co/600x400?text=Mushroom"
+  },
+  {
+    "name": "Lettuce",
+    "type": "vegetable",
+    "season": "rabi",
+    "description": "A leafy vegetable grown in cool climates, used in salads.",
+    "imageUrl": "https://placehold.co/600x400?text=Lettuce"
+  },
+  {
+    "name": "Broccoli",
+    "type": "vegetable",
+    "season": "rabi",
+    "description": "A cool-season vegetable crop grown for nutritious green heads.",
+    "imageUrl": "https://placehold.co/600x400?text=Broccoli"
+  },
+
+  {
+    "name": "Kale",
+    "type": "vegetable",
+    "season": "rabi",
+    "description": "A leafy vegetable grown in cool weather, rich in nutrients.",
+    "imageUrl": "https://placehold.co/600x400?text=Kale"
+  },
+  {
+    "name": "Celery",
+    "type": "vegetable",
+    "season": "rabi",
+    "description": "A cool-season vegetable grown for crunchy stalks and aromatic leaves.",
+    "imageUrl": "https://placehold.co/600x400?text=Celery"
+  },
+  {
+    "name": "Mint",
+    "type": "spice",
+    "season": "all-season",
+    "description": "A fast-growing herb crop used for flavoring, drinks, and medicinal uses.",
+    "imageUrl": "https://placehold.co/600x400?text=Mint"
+  },
+  {
+    "name": "Basil",
+    "type": "spice",
+    "season": "all-season",
+    "description": "An aromatic herb grown for culinary and medicinal uses.",
+    "imageUrl": "https://placehold.co/600x400?text=Basil"
+  },
+  {
+    "name": "Ajwain (Carom)",
+    "type": "spice",
+    "season": "rabi",
+    "description": "A spice seed crop grown in cool seasons, used for digestion and flavor.",
+    "imageUrl": "https://placehold.co/600x400?text=Ajwain"
+  },
+  {
+    "name": "Fennel (Saunf)",
+    "type": "spice",
+    "season": "rabi",
+    "description": "A spice crop grown in cool seasons, used for seeds and mouth freshener.",
+    "imageUrl": "https://placehold.co/600x400?text=Fennel"
+  },
+  {
+    "name": "Cinnamon",
+    "type": "spice",
+    "season": "all-season",
+    "description": "A spice crop grown in tropics, valued for aromatic bark.",
+    "imageUrl": "https://placehold.co/600x400?text=Cinnamon"
+  },
+  {
+    "name": "Vanilla",
+    "type": "spice",
+    "season": "all-season",
+    "description": "A high-value spice crop grown in humid regions, used for flavoring.",
+    "imageUrl": "https://placehold.co/600x400?text=Vanilla"
+  },
+  {
+    "name": "Saffron",
+    "type": "spice",
+    "season": "rabi",
+    "description": "A premium spice crop grown in cool dry climates, valued for stigmas.",
+    "imageUrl": "https://placehold.co/600x400?text=Saffron"
+  },
+  {
+    "name": "Nutmeg",
+    "type": "spice",
+    "season": "all-season",
+    "description": "A tropical spice crop grown for aromatic seed and mace.",
+    "imageUrl": "https://placehold.co/600x400?text=Nutmeg"
+  },
+  {
+    "name": "Star Anise",
+    "type": "spice",
+    "season": "all-season",
+    "description": "A spice crop grown in warm climates, used for flavoring and aroma.",
+    "imageUrl": "https://placehold.co/600x400?text=Star+Anise"
+  },
+
+  {
+    "name": "Bamboo",
+    "type": "commercial",
+    "season": "all-season",
+    "description": "A fast-growing woody grass used for construction, crafts, and shoots.",
+    "imageUrl": "https://placehold.co/600x400?text=Bamboo"
+  },
+  {
+    "name": "Hemp",
+    "type": "fiber",
+    "season": "kharif",
+    "description": "A fiber crop grown for industrial uses, requires regulated cultivation.",
+    "imageUrl": "https://placehold.co/600x400?text=Hemp"
+  },
+  {
+    "name": "Flax",
+    "type": "fiber",
+    "season": "rabi",
+    "description": "A fiber and oil crop grown in cool seasons, used for linen and seeds.",
+    "imageUrl": "https://placehold.co/600x400?text=Flax"
+  },
+  {
+    "name": "Kenaf",
+    "type": "fiber",
+    "season": "kharif",
+    "description": "A fiber crop grown in warm climates, used for ropes and paper pulp.",
+    "imageUrl": "https://placehold.co/600x400?text=Kenaf"
+  },
+  {
+    "name": "Sisal",
+    "type": "fiber",
+    "season": "all-season",
+    "description": "A fiber crop grown in dry regions, used for ropes and mats.",
+    "imageUrl": "https://placehold.co/600x400?text=Sisal"
+  },
+  {
+    "name": "Guar Gum (Industrial Guar)",
+    "type": "commercial",
+    "season": "kharif",
+    "description": "A commercial crop grown for industrial gum used in food and drilling.",
+    "imageUrl": "https://placehold.co/600x400?text=Guar+Gum"
+  },
+  {
+    "name": "Stevia",
+    "type": "commercial",
+    "season": "all-season",
+    "description": "A natural sweetener crop grown for leaves used as sugar substitute.",
+    "imageUrl": "https://placehold.co/600x400?text=Stevia"
+  },
+  {
+    "name": "Quinoa",
+    "type": "grain",
+    "season": "rabi",
+    "description": "A nutritious pseudo-cereal crop grown in cool climates and well-drained soils.",
+    "imageUrl": "https://placehold.co/600x400?text=Quinoa"
+  },
+  {
+    "name": "Amaranth",
+    "type": "grain",
+    "season": "kharif",
+    "description": "A pseudo-cereal crop grown for seeds and leafy greens, tolerant to stress.",
+    "imageUrl": "https://placehold.co/600x400?text=Amaranth"
+  },
+  {
+    "name": "Buckwheat",
+    "type": "grain",
+    "season": "rabi",
+    "description": "A short-duration pseudo-cereal grown in cooler regions and hill areas.",
+    "imageUrl": "https://placehold.co/600x400?text=Buckwheat"
+  }
+]

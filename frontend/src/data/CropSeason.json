@@ -1,0 +1,169 @@
+{
+  "Andhra Pradesh": {
+    "Kharif": ["Rice", "Maize", "Cotton", "Groundnut", "Millets"],
+    "Rabi": ["Rice", "Sunflower", "Chickpea", "Black Gram"],
+    "Zaid": ["Watermelon", "Cucumber", "Muskmelon"]
+  },
+
+  "Arunachal Pradesh": {
+    "Kharif": ["Rice", "Maize", "Millets"],
+    "Rabi": ["Wheat", "Mustard", "Pulses"],
+    "Zaid": ["Vegetables"]
+  },
+
+  "Assam": {
+    "Kharif": ["Rice", "Jute", "Maize"],
+    "Rabi": ["Pulses", "Mustard", "Peas"],
+    "Zaid": ["Cucumber", "Pumpkin", "Vegetables"]
+  },
+
+  "Bihar": {
+    "Kharif": ["Rice", "Maize"],
+    "Rabi": ["Wheat", "Lentil", "Chickpea"],
+    "Zaid": ["Watermelon", "Vegetables"]
+  },
+
+  "Chhattisgarh": {
+    "Kharif": ["Rice", "Maize"],
+    "Rabi": ["Chickpea", "Mustard", "Wheat"],
+    "Zaid": ["Cucumber", "Vegetables"]
+  },
+
+  "Goa": {
+    "Kharif": ["Rice"],
+    "Rabi": ["Pulses", "Vegetables"],
+    "Zaid": ["Cucumber", "Pumpkin"]
+  },
+
+  "Gujarat": {
+    "Kharif": ["Cotton", "Groundnut", "Bajra", "Maize"],
+    "Rabi": ["Wheat", "Mustard", "Cumin"],
+    "Zaid": ["Watermelon", "Muskmelon"]
+  },
+
+  "Haryana": {
+    "Kharif": ["Rice", "Maize", "Bajra"],
+    "Rabi": ["Wheat", "Mustard"],
+    "Zaid": ["Cucumber", "Vegetables"]
+  },
+
+  "Himachal Pradesh": {
+    "Kharif": ["Maize", "Paddy"],
+    "Rabi": ["Wheat", "Barley"],
+    "Zaid": ["Vegetables"]
+  },
+
+  "Jharkhand": {
+    "Kharif": ["Rice", "Maize"],
+    "Rabi": ["Pulses", "Wheat"],
+    "Zaid": ["Vegetables"]
+  },
+
+  "Karnataka": {
+    "Kharif": ["Rice", "Maize", "Millets"],
+    "Rabi": ["Ragi", "Chickpea", "Sunflower"],
+    "Zaid": ["Tomato", "Vegetables"]
+  },
+
+  "Kerala": {
+    "Kharif": ["Rice"],
+    "Rabi": ["Coconut", "Pepper"],
+    "Zaid": ["Banana", "Vegetables"]
+  },
+
+  "Madhya Pradesh": {
+    "Kharif": ["Soybean", "Maize"],
+    "Rabi": ["Wheat", "Gram", "Mustard"],
+    "Zaid": ["Watermelon"]
+  },
+
+  "Maharashtra": {
+    "Kharif": ["Cotton", "Soybean", "Rice"],
+    "Rabi": ["Jowar", "Wheat"],
+    "Zaid": ["Cucumber", "Vegetables"]
+  },
+
+  "Manipur": {
+    "Kharif": ["Rice"],
+    "Rabi": ["Pulses"],
+    "Zaid": ["Vegetables"]
+  },
+
+  "Meghalaya": {
+    "Kharif": ["Rice", "Maize"],
+    "Rabi": ["Potato", "Pulses"],
+    "Zaid": ["Vegetables"]
+  },
+
+  "Mizoram": {
+    "Kharif": ["Rice", "Maize"],
+    "Rabi": ["Pulses"],
+    "Zaid": ["Vegetables"]
+  },
+
+  "Nagaland": {
+    "Kharif": ["Rice", "Maize"],
+    "Rabi": ["Pulses"],
+    "Zaid": ["Vegetables"]
+  },
+
+  "Odisha": {
+    "Kharif": ["Rice", "Maize"],
+    "Rabi": ["Pulses", "Groundnut"],
+    "Zaid": ["Vegetables"]
+  },
+
+  "Punjab": {
+    "Kharif": ["Rice", "Maize"],
+    "Rabi": ["Wheat", "Mustard"],
+    "Zaid": ["Cucumber", "Vegetables"]
+  },
+
+  "Rajasthan": {
+    "Kharif": ["Bajra", "Maize"],
+    "Rabi": ["Wheat", "Mustard", "Barley"],
+    "Zaid": ["Watermelon"]
+  },
+
+  "Sikkim": {
+    "Kharif": ["Maize"],
+    "Rabi": ["Wheat"],
+    "Zaid": ["Vegetables"]
+  },
+
+  "Tamil Nadu": {
+    "Kharif": ["Rice", "Maize"],
+    "Rabi": ["Millets", "Groundnut"],
+    "Zaid": ["Brinjal", "Vegetables"]
+  },
+
+  "Telangana": {
+    "Kharif": ["Rice", "Cotton", "Maize"],
+    "Rabi": ["Sunflower", "Chickpea"],
+    "Zaid": ["Vegetables"]
+  },
+
+  "Tripura": {
+    "Kharif": ["Rice"],
+    "Rabi": ["Pulses"],
+    "Zaid": ["Vegetables"]
+  },
+
+  "Uttar Pradesh": {
+    "Kharif": ["Rice", "Maize"],
+    "Rabi": ["Wheat", "Sugarcane", "Mustard"],
+    "Zaid": ["Cucumber", "Vegetables"]
+  },
+
+  "Uttarakhand": {
+    "Kharif": ["Rice", "Maize"],
+    "Rabi": ["Wheat"],
+    "Zaid": ["Vegetables"]
+  },
+
+  "West Bengal": {
+    "Kharif": ["Rice", "Jute"],
+    "Rabi": ["Potato", "Mustard"],
+    "Zaid": ["Vegetables"]
+  }
+}
