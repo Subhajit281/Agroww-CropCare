@@ -31,6 +31,7 @@ app.use(
     origin: [
       "http://localhost:5173",
       "https://frontend-qxso.onrender.com",
+      "https://agroww-cropcare.onrender.com",
     ],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
