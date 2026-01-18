@@ -56,7 +56,7 @@ const Crops = () => {
     try {
       setLoading(true);
 
-      const res = await axios.get("http://localhost:8080/api/crops", {
+      const res = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/crops`, {
         params: {
           page,
           limit,

@@ -48,7 +48,7 @@ const Dashboard = () => {
       const token = localStorage.getItem("token");
 
       const res = await axios.patch(
-        "http://localhost:8080/api/users/profile-pic",
+        `${import.meta.env.VITE_API_BASE_URL}/api/users/profile-pic`,
         formData,
         {
           headers: {
@@ -76,7 +76,7 @@ const Dashboard = () => {
       setSavingName(true);
 
       const res = await axios.patch(
-        "http://localhost:8080/api/users/update-profile",
+        `${import.meta.env.VITE_API_BASE_URL}/api/users/update-profile`,
         { name: username },
         config
       );
@@ -101,7 +101,7 @@ const Dashboard = () => {
 
       // 1) Fetch profile
       const profileRes = await axios.get(
-        "http://localhost:8080/api/auth/me",
+        `${import.meta.env.VITE_API_BASE_URL}/api/auth/me`,
         config
       );
 
@@ -111,7 +111,7 @@ const Dashboard = () => {
 
       // 2) Fetch my crops
       const cropsRes = await axios.get(
-        "http://localhost:8080/api/mycrops",
+        `${import.meta.env.VITE_API_BASE_URL}/api/mycrops`,
         config
       );
 

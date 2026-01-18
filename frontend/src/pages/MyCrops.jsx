@@ -36,7 +36,7 @@ const MyCrops = () => {
   const fetchMyCrops = async () => {
     try {
       setLoading(true);
-      const res = await axios.get("http://localhost:8080/api/mycrops", config);
+      const res = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/mycrops`, config);
       setCrops(res.data.crops || []);
     } catch (err) {
       toast.error(err.response?.data?.message || "Failed to load crops");
@@ -63,7 +63,7 @@ const MyCrops = () => {
       setSearchingLocation(true);
 
       const res = await axios.get(
-        `http://localhost:8080/api/locations/search?q=${encodeURIComponent(
+        `${import.meta.env.VITE_API_BASE_URL}/api/locations/search?q=${encodeURIComponent(
           query
         )}`,
         config
@@ -100,7 +100,7 @@ const MyCrops = () => {
       };
 
       const res = await axios.post(
-        "http://localhost:8080/api/mycrops",
+        `${import.meta.env.VITE_API_BASE_URL}/api/mycrops`,
         payload,
         config
       );
@@ -126,7 +126,7 @@ const MyCrops = () => {
   //  Remove crop from backend
   const handleRemoveCrop = async (id) => {
     try {
-      await axios.delete(`http://localhost:8080/api/mycrops/${id}`, config);
+      await axios.delete(`${import.meta.env.VITE_API_BASE_URL}/api/mycrops/${id}`, config);
 
       toast.success("Crop removed successfully!");
 
