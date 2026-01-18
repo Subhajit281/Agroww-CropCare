@@ -19,17 +19,32 @@ const app = express();
 // middlewares
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
+
+
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://frontend-qxso.onrender.com",
+];
+
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",
-      "https://frontend-qxso.onrender.com",
-    ],
+    origin: function (origin, callback) {
+      // allow requests with no origin (like Postman)
+      if (!origin) return callback(null, true);
+
+      if (allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      } else {
+        return callback(new Error("Not allowed by CORS"));
+      }
+    },
+    credentials: true,
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true,
   })
 );
+
+// IMPORTANT: handle preflight properly
 app.options("*", cors());
 
 
