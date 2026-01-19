@@ -9,6 +9,6 @@ const storage = new CloudinaryStorage({
     allowed_formats: ["jpg", "jpeg", "png", "webp"],
   },
 });
-console.log("✅ upload middleware loaded");
+
 
 export const upload = multer({ storage });
