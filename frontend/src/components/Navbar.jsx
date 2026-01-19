@@ -2,6 +2,9 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useAuth } from "../context/AuthContext.jsx";
 import LogoutModal from "./LogoutModal.jsx";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { ImCross } from "react-icons/im";
+
 
 const Navbar = () => {
   const { isLoggedIn, logout } = useAuth();
@@ -113,10 +116,11 @@ const Navbar = () => {
 
           {/*  Mobile Hamburger Button */}
           <button
-            className="md:hidden text-gray-900 text-3xl"
+            className="md:hidden text-gray-900 text-3xl mr-4"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? "✕" : "☰"}
+            {isMenuOpen ? <ImCross size={20} /> : <GiHamburgerMenu size={20}/>
+}
           </button>
         </div>
 
