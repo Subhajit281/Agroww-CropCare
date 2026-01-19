@@ -119,7 +119,7 @@ const Navbar = () => {
             className="md:hidden text-gray-900 text-3xl mr-4"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <ImCross size={20} /> : <GiHamburgerMenu size={20}/>
+            {isMenuOpen ? <ImCross size={26} /> : <GiHamburgerMenu size={26}/>
 }
           </button>
         </div>
