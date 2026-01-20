@@ -3,8 +3,11 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import AppError from "../utils/AppError.js";
 
+
+
 async function handleUserSignup(req,res,next){
     try{
+        
         const SALT_ROUNDS = Number(process.env.BCRYPT_SALT_ROUNDS) || 10;
         const hashedPassword = await bcrypt.hash(req.body.password,SALT_ROUNDS);
         const user = await User.create({
@@ -12,7 +15,9 @@ async function handleUserSignup(req,res,next){
             email:req.body.email,
             password:hashedPassword,
         });
+        const cust = await User.findOne({email});
         if(!user) return next(new AppError("Couldn't Create Account, Please try again !!",401));
+        if (cust) return res.status(400).json({ msg: "Email already registered" });
 
         return res.status(201).json({
             success:true,
