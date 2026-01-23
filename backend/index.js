@@ -24,20 +24,27 @@ app.use(express.urlencoded({extended:false}));
 const allowedOrigins = [
   "http://localhost:5173",
   "https://frontend-qxso.onrender.com",
+  "https://agroww-cropcare.onrender.com", // ✅ ADD THIS
 ];
 
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",
-      "https://frontend-qxso.onrender.com",
-      "https://agroww-cropcare.onrender.com",
-    ],
+    origin: function (origin, callback) {
+      // allow requests with no origin (Postman, server-to-server)
+      if (!origin) return callback(null, true);
+
+      if (allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      } else {
+        return callback(new Error("Not allowed by CORS"));
+      }
+    },
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
   })
 );
+
 
 // preflight fix (Express 5 safe)
 app.options(/.*/, cors());
