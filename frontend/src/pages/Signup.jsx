@@ -1,20 +1,25 @@
 /* eslint-disable no-unused-vars */
-
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Signup = () => {
+  const API = import.meta.env.VITE_API_BASE_URL;
+
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
 
   // OTP states
   const [otpSent, setOtpSent] = useState(false);
   const [otpVerified, setOtpVerified] = useState(false);
-  const [otp, setOtp] = useState("");
   const [otpLoading, setOtpLoading] = useState(false);
+  const [verifyLoading, setVerifyLoading] = useState(false);
+  const [otp, setOtp] = useState("");
+
+  // ✅ resend timer
+  const [resendTimer, setResendTimer] = useState(0);
 
   const navigate = useNavigate();
 
@@ -25,47 +30,64 @@ const Signup = () => {
     role: "farmer",
   });
 
-  const API = import.meta.env.VITE_API_BASE_URL;
+  // countdown effect
+  useEffect(() => {
+    if (resendTimer <= 0) return;
+
+    const interval = setInterval(() => {
+      setResendTimer((prev) => prev - 1);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [resendTimer]);
 
   const handleChange = (e) => {
-    // if email changes after verification -> reset otp states
-    if (e.target.name === "email") {
-      setOtpSent(false);
-      setOtpVerified(false);
-      setOtp("");
-    }
-
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
-  };
 
-  const handleSendOtp = async () => {
-    if (!formData.email) return toast.error("Enter email first");
-
-    try {
-      setOtpLoading(true);
-
-      const res = await axios.post(`${API}/api/auth/send-otp`, {
-        email: formData.email,
-      });
-
-      toast.success(res.data.message || "OTP sent to email ✅");
-      setOtpSent(true);
-    } catch (err) {
-      toast.error(err.response?.data?.message || "Failed to send OTP");
-    } finally {
-      setOtpLoading(false);
+    // If email changes -> reset otp states
+    if (e.target.name === "email") {
+      setOtpSent(false);
+      setOtpVerified(false);
+      setOtp("");
+      setResendTimer(0);
     }
   };
 
+  // ✅ Send OTP
+  const handleSendOtp = async () => {
+  console.log("SEND OTP CLICKED");
+
+  if (!formData.email) return toast.error("Enter email first");
+
+  setOtpLoading(true);
+
+  try {
+    const res = await axios.post(`${API}/api/auth/send-otp`, {
+      email: formData.email,
+    });
+
+    toast.success(res.data.message || "OTP sent to email ✅");
+    setOtpSent(true);
+    setResendTimer(60);
+  } catch (err) {
+    console.log("OTP ERROR:", err);
+    toast.error(err.response?.data?.message || "Failed to send OTP");
+  } finally {
+    setOtpLoading(false);
+  }
+};
+
+
+  // ✅ Verify OTP
   const handleVerifyOtp = async () => {
     if (!formData.email) return toast.error("Enter email first");
-    if (otp.length !== 6) return toast.error("Enter 6 digit OTP");
+    if (!otp) return toast.error("Enter OTP");
 
     try {
-      setOtpLoading(true);
+      setVerifyLoading(true);
 
       const res = await axios.post(`${API}/api/auth/verify-otp`, {
         email: formData.email,
@@ -76,16 +98,18 @@ const Signup = () => {
       setOtpVerified(true);
     } catch (err) {
       toast.error(err.response?.data?.message || "OTP verification failed");
+      setOtpVerified(false);
     } finally {
-      setOtpLoading(false);
+      setVerifyLoading(false);
     }
   };
 
+  // ✅ Signup (only if OTP verified)
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!otpVerified) {
-      return toast.error("Please verify OTP before signup");
+      return toast.error("Please verify OTP before signup ❌");
     }
 
     setLoading(true);
@@ -94,7 +118,7 @@ const Signup = () => {
       const res = await axios.post(`${API}/api/auth/signup`, formData);
 
       toast.success(res.data.message || "Signup successful!");
-      setTimeout(() => navigate("/login"), 2000);
+      setTimeout(() => navigate("/login"), 1500);
     } catch (err) {
       toast.error(err.response?.data?.message || "Something went wrong");
     } finally {
@@ -124,51 +148,54 @@ const Signup = () => {
           />
 
           {/* Email */}
-          <div className="space-y-2">
-            <input
-              type="email"
-              name="email"
-              placeholder="Email Address"
-              value={formData.email}
-              onChange={handleChange}
-              required
-              className="w-full px-4 py-3 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#48ada3]"
-            />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            className="w-full px-4 py-3 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#48ada3]"
+          />
 
-            <button
-              type="button"
-              onClick={handleSendOtp}
-              disabled={otpLoading || !formData.email}
-              className="w-full bg-[#3c9087] text-white py-3 rounded-lg hover:bg-[#48ada3] transition disabled:opacity-60"
-            >
-              {otpLoading ? "Sending OTP..." : "Send OTP"}
-            </button>
-          </div>
+          {/* Send OTP Button */}
+          <button
+            type="button"
+            onClick={handleSendOtp}
+            disabled={otpLoading || otpVerified || resendTimer > 0}
+            className="w-full bg-[#3c9087] text-white py-3 mt-2 rounded-lg hover:bg-[#48ada3] transition disabled:opacity-60"
+          >
+            {otpVerified
+              ? "OTP Verified ✅"
+              : otpLoading
+              ? "Sending OTP..."
+              : resendTimer > 0
+              ? `Resend OTP in ${resendTimer}s`
+              : otpSent
+              ? "Resend OTP"
+              : "Send OTP"}
+          </button>
 
-          {/* OTP input */}
-          {otpSent && (
-            <div className="space-y-2">
+          {/* OTP input + Verify button */}
+          {otpSent && !otpVerified && (
+            <>
               <input
                 type="text"
-                placeholder="Enter 6 digit OTP"
+                placeholder="Enter OTP"
                 value={otp}
-                onChange={(e) => setOtp(e.target.value.replace(/\D/g, "").slice(0, 6))}
-                className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#48ada3]"
+                onChange={(e) => setOtp(e.target.value)}
+                className="w-full px-4 py-3 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#48ada3]"
               />
 
               <button
                 type="button"
                 onClick={handleVerifyOtp}
-                disabled={otpLoading || otp.length !== 6 || otpVerified}
-                className="w-full bg-[#3c9087] text-white py-3 rounded-lg hover:bg-[#48ada3] transition disabled:opacity-60"
+                disabled={verifyLoading}
+                className="w-full bg-[#2f6f68] text-white py-3 mt-2 rounded-lg hover:bg-[#3c9087] transition disabled:opacity-60"
               >
-                {otpVerified
-                  ? "OTP Verified ✅"
-                  : otpLoading
-                  ? "Verifying..."
-                  : "Verify OTP"}
+                {verifyLoading ? "Verifying..." : "Verify OTP"}
               </button>
-            </div>
+            </>
           )}
 
           {/* Password */}
@@ -180,8 +207,7 @@ const Signup = () => {
               value={formData.password}
               onChange={handleChange}
               required
-              disabled={!otpVerified}
-              className="w-full px-4 py-3 mt-2 border rounded-lg pr-12 focus:outline-none focus:ring-2 focus:ring-[#48ada3] disabled:bg-gray-100"
+              className="w-full px-4 py-3 mt-2 border rounded-lg pr-12 focus:outline-none focus:ring-2 focus:ring-[#48ada3]"
             />
 
             <button
@@ -193,12 +219,13 @@ const Signup = () => {
             </button>
           </div>
 
+          {/* Signup button */}
           <button
             type="submit"
             disabled={loading || !otpVerified}
             className="w-full bg-[#3c9087] text-white py-3 mt-6 rounded-lg hover:bg-[#48ada3] transition disabled:opacity-60"
           >
-            {loading ? "Creating Account..." : "Sign Up"}
+            {loading ? "Signing Up..." : "Sign Up"}
           </button>
         </form>
 
