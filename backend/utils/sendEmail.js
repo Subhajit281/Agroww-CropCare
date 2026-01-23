@@ -9,6 +9,10 @@ export const sendOtpEmail = async (email, otp) => {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASS,
     },
+    tls: {
+    rejectUnauthorized: false,
+    },
+
       connectionTimeout: 20000, // 20 sec
       greetingTimeout: 20000,
       socketTimeout: 20000,

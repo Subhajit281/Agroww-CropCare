@@ -10,17 +10,24 @@ import { sendOtpEmail } from "../utils/sendEmail.js";
 export const sendOtp = async (req, res) => {
   try {
     const { email } = req.body;
-    if (!email) return res.status(400).json({ message: "Email required" });
 
-    // check recent OTP (cooldown 60s)
+    if (!email) {
+      return res.status(400).json({ message: "Email required" });
+    }
+
+    // cooldown check (60 sec)
     const lastOtp = await Otp.findOne({ email }).sort({ createdAt: -1 });
 
     if (lastOtp) {
-      const diffSeconds = (Date.now() - new Date(lastOtp.createdAt).getTime()) / 1000;
+      const diffSeconds =
+        (Date.now() - new Date(lastOtp.createdAt).getTime()) / 1000;
 
       if (diffSeconds < 60) {
+        const remaining = Math.ceil(60 - diffSeconds);
+
         return res.status(429).json({
-          message: `Please wait ${Math.ceil(60 - diffSeconds)} seconds before requesting another OTP`,
+          message: `Please wait ${remaining} seconds before requesting another OTP`,
+          remainingSeconds: remaining, // 🔥 frontend timer use
         });
       }
     }
@@ -28,7 +35,7 @@ export const sendOtp = async (req, res) => {
     const otp = generateOTP();
     const otpHash = await bcrypt.hash(otp, 10);
 
-    await Otp.deleteMany({ email }); // remove old OTPs
+    await Otp.deleteMany({ email });
 
     await Otp.create({
       email,
@@ -38,11 +45,19 @@ export const sendOtp = async (req, res) => {
 
     await sendOtpEmail(email, otp);
 
-    res.json({ message: "OTP sent to email" });
+    return res.status(200).json({
+      message: "OTP sent to email",
+      remainingSeconds: 60, // optional (you can start timer from 60)
+    });
   } catch (err) {
-    res.status(500).json({ message: "OTP send failed", error: err.message });
+    console.log("SEND OTP ERROR:", err); // 🔥 helps in Render logs
+    return res.status(500).json({
+      message: "OTP send failed",
+      error: err.message,
+    });
   }
 };
+
 
 
 
