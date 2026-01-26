@@ -9,8 +9,10 @@ const LogoutModal = ({ onCancel, onConfirm }) => {
         </h2>
 
         <p className="text-gray-600 text-center mt-2">
-          Do you really want to logout?
+          Do you really want to logout?<br/>
+          I'll miss you ☹️💔
         </p>
+        
 
         <div className="flex gap-3 mt-6">
           <button
