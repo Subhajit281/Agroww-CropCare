@@ -27,7 +27,7 @@ export const sendOtp = async (req, res) => {
 
         return res.status(429).json({
           message: `Please wait ${remaining} seconds before requesting another OTP`,
-          remainingSeconds: remaining, // 🔥 frontend timer use
+          remainingSeconds: remaining,
         });
       }
     }
@@ -43,14 +43,16 @@ export const sendOtp = async (req, res) => {
       expiresAt: new Date(Date.now() + 5 * 60 * 1000),
     });
 
-    await sendOtpEmail(email, otp);
+    // ✅ FIRE AND FORGET - No await! Email sends in background
+    sendOtpEmail(email, otp);
 
+    // ✅ Respond immediately without waiting for email
     return res.status(200).json({
       message: "OTP sent to email",
-      remainingSeconds: 60, // optional (you can start timer from 60)
+      remainingSeconds: 60,
     });
   } catch (err) {
-    console.log("SEND OTP ERROR:", err); // 🔥 helps in Render logs
+    console.log("SEND OTP ERROR:", err);
     return res.status(500).json({
       message: "OTP send failed",
       error: err.message,

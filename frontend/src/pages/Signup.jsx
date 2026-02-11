@@ -18,7 +18,7 @@ const Signup = () => {
   const [verifyLoading, setVerifyLoading] = useState(false);
   const [otp, setOtp] = useState("");
 
-  // ✅ resend timer
+  //  resend timer
   const [resendTimer, setResendTimer] = useState(0);
 
   const navigate = useNavigate();
@@ -56,32 +56,32 @@ const Signup = () => {
     }
   };
 
-  // ✅ Send OTP
+  //  Send OTP - Modified for instant response
   const handleSendOtp = async () => {
-  console.log("SEND OTP CLICKED");
+    console.log("SEND OTP CLICKED");
 
-  if (!formData.email) return toast.error("Enter email first");
+    if (!formData.email) return toast.error("Enter email first");
 
-  setOtpLoading(true);
+    setOtpLoading(true);
 
-  try {
-    const res = await axios.post(`${API}/api/auth/send-otp`, {
-      email: formData.email,
-    });
+    try {
+      // Backend now returns immediately (doesn't wait for email)
+      const res = await axios.post(`${API}/api/auth/send-otp`, {
+        email: formData.email,
+      });
 
-    toast.success(res.data.message || "OTP sent to email ✅");
-    setOtpSent(true);
-    setResendTimer(60);
-  } catch (err) {
-    console.log("OTP ERROR:", err);
-    toast.error(err.response?.data?.message || "Failed to send OTP");
-  } finally {
-    setOtpLoading(false);
-  }
-};
+      toast.success(res.data.message || "OTP sent to email");
+      setOtpSent(true);
+      setResendTimer(60);
+    } catch (err) {
+      console.log("OTP ERROR:", err);
+      toast.error(err.response?.data?.message || "Failed to send OTP");
+    } finally {
+      setOtpLoading(false);
+    }
+  };
 
-
-  // ✅ Verify OTP
+  //  Verify OTP
   const handleVerifyOtp = async () => {
     if (!formData.email) return toast.error("Enter email first");
     if (!otp) return toast.error("Enter OTP");
@@ -94,7 +94,7 @@ const Signup = () => {
         otp,
       });
 
-      toast.success(res.data.message || "OTP verified ✅");
+      toast.success(res.data.message || "OTP verified");
       setOtpVerified(true);
     } catch (err) {
       toast.error(err.response?.data?.message || "OTP verification failed");
@@ -104,12 +104,12 @@ const Signup = () => {
     }
   };
 
-  // ✅ Signup (only if OTP verified)
+  //  Signup (only if OTP verified)
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!otpVerified) {
-      return toast.error("Please verify OTP before signup ❌");
+      return toast.error("Please verify OTP before signup");
     }
 
     setLoading(true);
@@ -166,7 +166,7 @@ const Signup = () => {
             className="w-full bg-[#3c9087] text-white py-3 mt-2 rounded-lg hover:bg-[#48ada3] transition disabled:opacity-60"
           >
             {otpVerified
-              ? "OTP Verified ✅"
+              ? "OTP Verified"
               : otpLoading
               ? "Sending OTP..."
               : resendTimer > 0
