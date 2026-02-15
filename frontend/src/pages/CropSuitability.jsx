@@ -60,13 +60,13 @@ return (
     <p className="">Find out the best suitable crops for your region in different seasons.</p>
 
     {/* Search Section */}
-    <div className="bg-[linear-gradient(170deg,#439d93,#4da89f,#E0F3F0,#f1f9f8)] p-6 rounded-2xl shadow-md border mb-8 mt-12 grid grid-cols-1 md:grid-cols-3 gap-12">
+    <div className="bg-[linear-gradient(170deg,#439d93,#4da89f,#E0F3F0,#f1f9f8)] p-4 rounded-2xl shadow-md border mb-8 mt-12 grid grid-cols-1 md:grid-cols-3 gap-12">
       
       {/* State Select */}
       <select
         value={stateName}
         onChange={(e) => setStateName(e.target.value)}
-        className="border px-4 py-2 rounded-xl font-semibold bg-gray-100 outline-none"
+        className="border border-gray-400 px-4 py-2 rounded-xl font-semibold bg-gray-200 outline-none"
       >
         <option value="">Select State</option>
         {states.map((state) => (
@@ -80,7 +80,7 @@ return (
       <select
         value={season}
         onChange={(e) => setSeason(e.target.value)}
-        className="border px-4 py-2 rounded-xl font-semibold bg-gray-100 outline-none"
+        className="border border-gray-400 px-4 py-2 rounded-xl font-semibold bg-gray-200 outline-none"
       >
         <option value="">Select Season</option>
         <option value="Kharif">🌧️ Kharif</option>

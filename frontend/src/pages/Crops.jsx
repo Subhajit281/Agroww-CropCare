@@ -107,14 +107,14 @@ const Crops = () => {
         </p>
 
         {/* Controls */}
-         <div className="mt-2 bg-[linear-gradient(170deg,#439d93,#4da89f,#E0F3F0,#f1f9f8)]  rounded-2xl shadow-lg p-4 flex flex-col md:flex-row gap-4 md:items-center md:justify-between">
+         <div className="mt-2 bg-[linear-gradient(170deg,#439d93,#4da89f,#E0F3F0,#f1f9f8)]  rounded-2xl shadow-lg p-2 flex flex-col md:flex-row gap-4 md:items-center md:justify-between">
           {/* Search */}
           <input
             type="text"
             value={search}
             onChange={handleSearchChange}
             placeholder="Search crops (eg: Rice, Wheat, Mango...)"
-              className="w-[70%] bg-white/90 backdrop-blur-md border border-black/40 rounded-2xl px-5 py-3
+              className="w-full bg-white/80 backdrop-blur-md border border-white/90 rounded-2xl px-5 py-3
              placeholder:text-gray-500 text-gray-900 outline-none"
 
 
@@ -125,7 +125,7 @@ const Crops = () => {
             <select
               value={type}
               onChange={handleTypeChange}
-              className="w-1/2 md:w-auto px-2 py-2 border rounded-2xl"
+              className="w-1/2 md:w-auto px-2 py-2 border border-gray-500 rounded-2xl"
             >
               <option value="all">ALL</option>
               <option value="grain">GRAIN</option>
@@ -143,7 +143,7 @@ const Crops = () => {
             <select
               value={season}
               onChange={handleSeasonChange}
-              className="w-1/2 md:w-auto px-2 py-2 border rounded-2xl "
+              className="w-1/2 md:w-auto px-2 py-2 border border-gray-500 rounded-2xl "
             >
               <option value="all">ALL</option>
               <option value="kharif">KHARIF</option>
