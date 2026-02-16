@@ -4,6 +4,7 @@ import { useAuth } from "../context/AuthContext.jsx";
 import LogoutModal from "./LogoutModal.jsx";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
+import { CgProfile } from "react-icons/cg";
 
 
 const Navbar = () => {
@@ -99,9 +100,9 @@ const Navbar = () => {
               <>
                 <Link
                   to="/dashboard"
-                  className="text-gray-800 font-semibold text-lg hover:text-gray-600"
+                  className="text-gray-900 font-semibold text-lg hover:text-gray-600"
                 >
-                  Dashboard
+                  <CgProfile size={27}/>
                 </Link>
 
                 <button
